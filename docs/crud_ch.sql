@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-06-2023 a las 20:22:05
+-- Tiempo de generación: 24-06-2023 a las 09:08:54
 -- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 7.4
+-- Versión de PHP: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,6 +40,13 @@ CREATE TABLE `tm_bodega` (
   `fech_elim` datetime DEFAULT NULL,
   `est` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `tm_bodega`
+--
+
+INSERT INTO `tm_bodega` (`bod_id`, `enc_id`, `bod_cod`, `bod_nom`, `bod_direcc`, `bod_dot`, `fech_crea`, `est_id`, `fech_modi`, `fech_elim`, `est`) VALUES
+(1, 1, 'CHI01', 'BODEGA l', 'canal apiao 6051', 100, '2023-06-24 02:56:56', 1, '2023-06-24 02:57:17', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -116,7 +123,7 @@ ALTER TABLE `tm_estado`
 -- AUTO_INCREMENT de la tabla `tm_bodega`
 --
 ALTER TABLE `tm_bodega`
-  MODIFY `bod_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `bod_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `tm_encargado`
