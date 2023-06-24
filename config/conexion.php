@@ -1,5 +1,4 @@
 
-<!-- TODO:PDO PARA CONECTAR CON MYSQL -->
 <?php
     class Conectar{
         protected $dbh;

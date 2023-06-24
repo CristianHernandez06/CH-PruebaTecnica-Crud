@@ -1,4 +1,4 @@
-<!-- /* llamada a las clases necesarias */ -->
+
 <?php
     require_once("../config/conexion.php");
     require_once("../models/Bodega.php");
@@ -6,7 +6,6 @@
 
     switch($_GET["op"]){
 
-        // TODO:CONTROLADORES PARA LISTAR,GUARDARYEDITAR, MOSTRAR, ELIMINAR
         case "listar":
             $datos=$bodega->get_bodega();
             $data= Array();

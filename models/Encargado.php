@@ -1,4 +1,4 @@
-<!-- TODO:EL MODELO DE ENCARGADO , PARA CREAR EL COMBOBOX -->
+
 <?php
     class Encargado extends Conectar{
 

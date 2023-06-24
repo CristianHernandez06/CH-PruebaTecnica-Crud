@@ -1,4 +1,4 @@
-<!-- TODO:EL MODELO DE ESTADO , PARA CREAR EL COMBOBOX -->
+
 <?php
     class Estado extends Conectar{
 

@@ -6,7 +6,7 @@ function init() {
   });
 }
 
-// TODO:NUESTRO DOCUMENT READY UTILIZANDO LA LIBRERIA SELECT2 PARA CREAR LOS COMBOBOX DE ESTADO Y ENCARGADO.
+
 $(document).ready(function () {
   // Select2
   $("#enc_id").select2({
@@ -76,7 +76,7 @@ $(document).ready(function () {
     .DataTable();
 });
 
-// TODO:FUNCION GUARDARYEDITAR BODEGA
+
 function guardaryeditar(e) {
   e.preventDefault();
   var formData = new FormData($("#bodega_form")[0]);
@@ -87,6 +87,7 @@ function guardaryeditar(e) {
     contentType: false,
     processData: false,
     success: function (datos) {
+      console.log(datos);
       $("#bodega_form")[0].reset();
       $("#modalmantenimiento").modal("hide");
       $("#bodega_data").DataTable().ajax.reload();
@@ -96,7 +97,7 @@ function guardaryeditar(e) {
   });
 }
 
-// TODO:FUNCION EDITAR BODEGA
+
 function editar(bod_id) {
   $.post(
     "../../controller/bodega.php?op=mostrar",
@@ -116,7 +117,7 @@ function editar(bod_id) {
   $("#modalmantenimiento").modal("show");
 }
 
-// TODO:FUNCION ELIMINAR BODEGA
+
 function eliminar(bod_id) {
   swal
     .fire({
@@ -147,7 +148,7 @@ function eliminar(bod_id) {
     });
 }
 
-// TODO:NUESTRO BOTON NUEVO REGISTRO,EN EL CUAL SE LIMPIAN LOS DATOS AL MOMENTO DE EDITAR BODEGA
+
 $(document).on("click", "#btnnuevo", function () {
   $("#bod_id").val("");
   $("#enc_id").val("").trigger("change");

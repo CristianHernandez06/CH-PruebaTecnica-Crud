@@ -1,7 +1,6 @@
 <?php
     class Bodega extends Conectar{
 
-        // TODO:Esta función obtiene la información de las bodegas de la base de datos. Realiza una consulta    SQL que recupera datos de las tablas "tm_bodega", "tm_encargado" y "tm_estado", utilizando las cláusulas INNER JOIN para unir las tablas. NO USE PROCEDIMIENTO ALMACENADO PARA VISUALIZAR LAS TABLAS.
         public function get_bodega(){
             $conectar= parent::conexion();
             parent::set_names();
@@ -25,7 +24,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-        // TODO:Esta función obtiene la información de una bodega específica basada en su ID.
+    
         public function get_bodega_x_id($bod_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -36,7 +35,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-        // TODO:Esta función elimina una bodega de la base de datos.
+       
         public function delete_bodega($bod_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -52,7 +51,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-        // TODO:Esta función inserta una nueva bodega en la base de datos. 
+      
         public function insert_bodega($enc_id,$bod_cod,$bod_nom,$bod_direcc,$bod_dot,$est_id){
             $conectar= parent::conexion();
             parent::set_names();
@@ -68,7 +67,7 @@
             return $resultado=$sql->fetchAll();
         }
 
-        // TODO:Esta función actualiza la información de una bodega existente en la base de datos. 
+         
         public function update_bodega($bod_id,$enc_id,$bod_cod,$bod_nom,$bod_direcc,$bod_dot,$est_id){
             $conectar= parent::conexion();
             parent::set_names();

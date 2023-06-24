@@ -1,5 +1,4 @@
 
-<!-- TODO:TENEMOS EL MODAL MANTENIMIENTO DE BODEGAS -->
 <div id="modalmantenimiento" class="modal fade bd-example-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">

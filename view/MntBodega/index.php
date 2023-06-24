@@ -23,7 +23,6 @@
   </head>
 
   <body>
-    <!-- TODO:menu de inicio -->
     <div class="br-logo"><a href=""><span>[</span>CRUD CH.<span>]</span></a></div>
     <div class="br-sideleft overflow-y-auto">
       <label class="sidebar-label pd-x-15 mg-t-20">Menu</label>

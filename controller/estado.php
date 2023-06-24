@@ -1,11 +1,11 @@
-<!-- /* llamada a las clases necesarias */ -->
+
 <?php
     require_once("../config/conexion.php");
     require_once("../models/Estado.php");
     $estado = new Estado();
 
     switch($_GET["op"]){
-        // TODO:CONTROLADOR PARA CREAR EL COMBOBOX
+    
         case "combo":
             $datos=$estado->get_estado();
             if (is_array($datos)==true and count($datos)>0){              
