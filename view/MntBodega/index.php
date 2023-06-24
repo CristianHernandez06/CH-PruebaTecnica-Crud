@@ -33,7 +33,7 @@
         <a href="../MntBodega/" class="br-menu-link">
           <div class="br-menu-item">
             <i class="menu-item-icon icon ion-ios-filing-outline tx-24"></i>
-            <span class="menu-item-label">CRUD Mantenimiento</span>
+            <span class="menu-item-label">Mantenimiento</span>
             <i class="menu-item-arrow fa fa-angle-down"></i>
           </div>
         </a>
