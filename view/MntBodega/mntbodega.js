@@ -76,28 +76,28 @@ $(document).ready(function () {
     .DataTable();
 });
 
-
+/**Guarda o edita un registro de bodega mediante una solicitud AJAX. */
 function guardaryeditar(e) {
-  e.preventDefault();
-  var formData = new FormData($("#bodega_form")[0]);
-  $.ajax({
-    url: "../../controller/bodega.php?op=guardaryeditar",
-    type: "POST",
-    data: formData,
-    contentType: false,
-    processData: false,
-    success: function (datos) {
-      console.log(datos);
-      $("#bodega_form")[0].reset();
-      $("#modalmantenimiento").modal("hide");
-      $("#bodega_data").DataTable().ajax.reload();
+    e.preventDefault();
+    var formData = new FormData($("#bodega_form")[0]);
+    $.ajax({
+      url: "../../controller/bodega.php?op=guardaryeditar",
+      type: "POST",
+      data: formData,
+      contentType: false,
+      processData: false,
+      success: function (datos) {
+        console.log(datos);
+        $("#bodega_form")[0].reset();
+        $("#modalmantenimiento").modal("hide");
+        $("#bodega_data").DataTable().ajax.reload();
 
-      swal.fire("Registro!", "El registro correctamente.", "success");
-    },
-  });
+        swal.fire("Registro!", "El registro correctamente.", "success");
+      },
+    });
 }
 
-
+/**Carga los datos de un registro de bodega para su edición. */
 function editar(bod_id) {
   $.post(
     "../../controller/bodega.php?op=mostrar",
@@ -117,7 +117,7 @@ function editar(bod_id) {
   $("#modalmantenimiento").modal("show");
 }
 
-
+/**Elimina un registro de bodega. */
 function eliminar(bod_id) {
   swal
     .fire({
@@ -148,7 +148,8 @@ function eliminar(bod_id) {
     });
 }
 
-
+/**este bloque de código establece los campos del formulario en valores predeterminados o vacíos, muestra el modal de mantenimiento cuando se hace clic en el botón con el ID "#btnnuevo". Esto proporciona una funcionalidad para agregar un nuevo registro en el formulario.
+ */
 $(document).on("click", "#btnnuevo", function () {
   $("#bod_id").val("");
   $("#enc_id").val("").trigger("change");

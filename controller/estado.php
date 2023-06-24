@@ -5,7 +5,7 @@
     $estado = new Estado();
 
     switch($_GET["op"]){
-    
+        /**el case "combo" del controlador genera dinámicamente un HTML select con opciones de estados utilizando los datos obtenidos del método get_estado(). */
         case "combo":
             $datos=$estado->get_estado();
             if (is_array($datos)==true and count($datos)>0){              

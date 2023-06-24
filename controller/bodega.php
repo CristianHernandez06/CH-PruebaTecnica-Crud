@@ -6,6 +6,7 @@
 
     switch($_GET["op"]){
 
+        /**Obtener información de todas las bodegas y formatear la respuesta en formato JSON para mostrarla al cliente. */
         case "listar":
             $datos=$bodega->get_bodega();
             $data= Array();
@@ -34,8 +35,8 @@
                 "aaData"=>$data);
             echo json_encode($results);
 
-            break;
-
+        break;
+        /**Guardar o editar una bodega en la base de datos, según si existe o no un ID de bodega en $_POST["bod_id"]. */               
         case "guardaryeditar":
             $datos=$bodega->get_bodega_x_id($_POST["bod_id"]);
             if(empty($_POST["bod_id"])){
@@ -45,8 +46,8 @@
             }else{
                 $bodega->update_bodega($_POST["bod_id"],$_POST["enc_id"],$_POST["bod_cod"],$_POST["bod_nom"],$_POST["bod_direcc"],$_POST["bod_dot"],$_POST["est_id"]);
             }
-            break;
-
+        break;
+        /**Obtener información de una bodega específica y enviarla como respuesta JSON al cliente. */        
         case "mostrar":
             $datos=$bodega->get_bodega_x_id($_POST["bod_id"]);
             if(is_array($datos)==true and count($datos)>0){
@@ -61,11 +62,11 @@
                 }
                 echo json_encode($output);
             }
-            break;
-
+        break;
+        /**Eliminar una bodega específica de la base de datos a travez de su id. */       
         case "eliminar":
             $bodega->delete_bodega($_POST["bod_id"]);
-            break;
+        break;
 
     }
 ?>

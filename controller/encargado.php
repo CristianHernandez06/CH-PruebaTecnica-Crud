@@ -6,7 +6,7 @@
 
     switch($_GET["op"]){
 
-
+        /**el case "combo" del controlador genera dinámicamente un HTML select con opciones de encargados de bodega utilizando los datos obtenidos del método get_encargado() */
         case "combo":
             $datos=$encargado->get_encargado();
             if (is_array($datos)==true and count($datos)>0){              

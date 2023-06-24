@@ -11,7 +11,7 @@
   </head>
   <body>
     <script>
-    // TODO:MANDAMOS A LA URL DE NUESTRO CRUD
+    /**Cuando se ejecuta esta línea de código, la página actual se reemplaza por la nueva URL especificada. */
     window.location.replace("http://localhost:90/CH-PruebaTecnica-Crud/view/mntbodega/");
     </script>
   </body>

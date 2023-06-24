@@ -65,7 +65,7 @@
         <h4 class="tx-gray-800 mg-b-5">Bodega</h4>
         <p class="mg-b-0">Desde esta ventana podra dar mantenimiento a bodegas</p>
       </div>
-      <!-- TODO:TENEMOS NUESTRO DATATABLE -->
+      
       <div class="br-pagebody">
         <div class="br-section-wrapper">
             <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Mantenimiento de Bodega</h6>
@@ -76,9 +76,9 @@
                 <thead>
                   <tr>
                     <th class="wd-15p">Nombre Encargado</th>
-                    <th class="wd-15p">Codigo</th>
+                    <th class="wd-15p">Codigo Bodega</th>
                     <th class="wd-15p">Nombre Bodega</th>
-                    <th class="wd-15p">Direccion</th>
+                    <th class="wd-15p">Direccion Bodega</th>
                     <th class="wd-15p">Dotacion</th>
                     <th class="wd-15p">Fecha</th>
                     <th class="wd-15p">Estado</th>
