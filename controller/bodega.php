@@ -16,7 +16,7 @@
                 $sub_array[] = $row["bod_nom"];
                 $sub_array[] = $row["bod_direcc"];
                 $sub_array[] = $row["bod_dot"];
-                $sub_array[] = date("d/m/Y", strtotime($row["fech_crea"]));
+                $sub_array[] = date("d/m/Y H:i:s", strtotime($row["fech_crea"]));
                 if ($row["est_id"]=="1"){
                     $sub_array[] = '<span class="btn btn-success pd-x-30 pd-y-5">Activado</span>';
                 }else{
