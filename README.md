@@ -48,3 +48,15 @@ El código del proyecto está disponible para utilizar tanto con MySQL como con 
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Si encuentras errores o mejoras en el proyecto, no dudes en abrir un [issue](https://github.com/CristianHernandez06/CH-PruebaTecnica-Crud/issues) o enviar un [pull request](https://github.com/CristianHernandez06/CH-PruebaTecnica-Crud/pulls).
+
+## Librerías Utilizadas
+
+En este proyecto, se han utilizado las siguientes librerías:
+
+- **Select2**: Se ha utilizado Select2 para mejorar la funcionalidad de los elementos de selección HTML, proporcionando una experiencia de usuario mejorada al permitir la búsqueda en una lista desplegable y la selección de múltiples opciones.
+
+- **SweetAlert**: SweetAlert se ha utilizado para reemplazar los cuadros de diálogo estándar del navegador con modales más atractivos y personalizables. Esto ha permitido mostrar mensajes de confirmación y notificaciones más amigables durante las operaciones CRUD.
+
+- **Bootstrap**: Bootstrap ha sido utilizado como framework de diseño frontend para crear un diseño atractivo y adaptable a diferentes dispositivos. También se han aprovechado los componentes de interfaz de usuario predefinidos de Bootstrap, como botones y formularios, para facilitar el desarrollo de la interfaz de usuario.
+
+- **DataTables**: DataTables se ha utilizado para mejorar las capacidades de las tablas HTML estándar. Esto ha permitido agregar funcionalidades avanzadas como clasificación, filtrado, paginación y búsqueda en las tablas de datos, mejorando la visualización y manipulación de los datos en el CRUD.
