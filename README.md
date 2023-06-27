@@ -1,4 +1,4 @@
-# CH-PruebaTecnica-Crud :fa-eye:
+# CH-PruebaTecnica-Crud 
 
 Este repositorio contiene una prueba técnica de un **CRUD** (Create, Read, Update, Delete) desarrollado por **Cristian Hernández.**
 
